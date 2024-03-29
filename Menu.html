@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./css/Menu.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css" />
-    <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
-    <!-- <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script> -->
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
   </head>
 
   <body>
     <div class="header position-sticky sticky-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-sm-4 col-4 px-0">
-            <img src="./img/Logo/Logo_header.png" class="img-fluid" alt="Logo" />
+          <div class="col-md-2 col-sm-4 col-4 px-0 center">
+            <img src="./img/Logo/logo2.png" class="img-fluid_2_2" alt="Logo" />
           </div>
           <div class="col-md-4 col-sm-8 col-8 py-3">
             <div class="input-group mb-3">
@@ -46,7 +48,7 @@
                   </div>
                   <div class="col-md-8 px-0">
                     Hotline<br />
-                    <strong class="text-info">19008198</strong>
+                    <strong class="text-info">03358585076</strong>
                   </div>
                 </div>
               </div>
@@ -61,7 +63,9 @@
                   </div>
                   <div class="col-md-8 px-0">
                     Xin chào!<br />
-                    <strong class="text-info" id="Dangnhap">Đăng nhập</strong>
+                    <a href="dangnhap.html" id="taikhoan" class="text-decoration-none">
+                      <strong class="text-info" id="Dangnhap">Đăng nhập</strong>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -135,13 +139,13 @@
                     <div class="socnet">
                       <li class="nav-item px-4 py-2">
                         <span class="fs-2 px-1">
-                          <i class="fa-brands fa-twitter" style="color: #1f93d6"></i>
+                          <i class="fa-brands fa-instagram" style="color: #e21d9a"></i>
                         </span>
                         <span class="fs-2 px-1">
                           <i class="fa-brands fa-facebook" style="color: #1f93d6"></i>
                         </span>
                         <span class="fs-2 px-1">
-                          <i class="fa-brands fa-telegram" style="color: #3c7cec"></i>
+                          <i class="fa-brands fa-tiktok"></i>
                         </span>
                       </li>
                     </div>
@@ -169,271 +173,49 @@
             </div>
             <div class="product-list-s py-3">
               <div class="row">
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/Trasua/Trà Sữa Hoàng Kim.jpg"
-                    alt="Trà sữa hoàng kim"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Trà Sữa Hoàng Kim</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                <div class="col-md-4 col-6 mb-3 card" data-id="1">
+                  <img src="./img/Menu/PigTea/01 (7).JPG" alt="Trà sữa hoàng kim" class="img-thumbnail my-1" />
+                  <p class="h5">Trà Sữa Kem Chesse</p>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/Trasua/Trà Sữa Chocolate.jpg"
-                    alt="Trà Sữa Chocolate"
-                    class="img-thumbnail my-1"
-                  />
+                <div class="col-md-4 col-6 mb-3 card" data-id="2">
+                  <img src="./img/Menu/PigTea/01 (11).JPG" alt="Trà Sữa Chocolate" class="img-thumbnail my-1" />
                   <p class="h5">Trà Sữa Chocolate</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">30.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="3">
                   <img
-                    src="./img/Menu/Trasua/Trà Sữa Oolong 3J.jpg"
+                    src="./img/Menu/PigTea/Trà Sữa Đặc Biệt.jpg"
                     alt="Trà Sữa Oolong 3J"
                     class="img-thumbnail my-1"
                   />
-                  <p class="h5">Trà Sữa Oolong 3J</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h5">Trà Sữa Full Topping</p>
+                  <p class="h4">35.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/Trasua/Trà Sữa Hokkaido.jpg" alt="Trà Sữa Hokkaido" class="img-thumbnail my-1" />
-                  <p class="h5">Trà Sữa Hokkaido</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                <div class="col-md-4 col-6 mb-3 card" data-id="4">
+                  <img src="./img/Menu/PigTea/01 (11).JPG" alt="Trà Sữa Hokkaido" class="img-thumbnail my-1" />
+                  <p class="h5">Trà Sữa Đường Đen</p>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="5">
+                  <img src="./img/Menu/PigTea/01 (8).JPG" alt="Trà Sữa Sương Sáo" class="img-thumbnail my-1" />
+                  <p class="h5">Trà Đào Sang Chảnh</p>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="col-md-4 col-6 mb-3 card" data-id="6">
                   <img
-                    src="./img/Menu/Trasua/Trà Sữa Sương Sáo.jpg"
-                    alt="Trà Sữa Sương Sáo"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Trà Sữa Sương Sáo</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/Trasua/Trà Sữa Trân Châu Hoàng Kim.jpg"
+                    src="./img/Menu/PigTea/01 (9).JPG"
                     alt="Trà Sữa Trân Châu Hoàng Kim"
                     class="img-thumbnail my-1"
                   />
-                  <p class="h5">Trà Sữa Trân Châu Hoàng Kim</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-product2">
-          <div class="cate-list mb-3">
-            <div class="row"></div>
-          </div>
-          <div class="product-list mb-3">
-            <div class="product-title">
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="bg-success p-2 text-white bg-opacity-75 h1">Trà trái cây</p>
-                </div>
-              </div>
-            </div>
-            <div class="product-list-s py-3">
-              <div class="row">
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/TraTraCay/Chanh Ai-Yu và Trân Châu Trắng.jpg"
-                    alt="Chanh Ai-Yu và Trân Châu Trắng"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Chanh Ai-Yu và Trân Châu Trắng</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/TraTraCay/Trà Alisan Trái Cây.jpg"
-                    alt="Trà Alisan Trái Cây"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Trà Alisan Trái Cây</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/TraTraCay/Trà Alisan Vải.jpg" alt="Trà Alisan Vải" class="img-thumbnail my-1" />
-                  <p class="h5">Trà Alisan Vải</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/TraTraCay/Trà Oolong Vải.jpg" alt="Trà Oolong Vải" class="img-thumbnail my-1" />
-                  <p class="h5">Trà Oolong Vải</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/TraTraCay/Trà Xanh Đào.jpg" alt="Trà Xanh Đào" class="img-thumbnail my-1" />
-                  <p class="h5">Trà Xanh Đào</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/TraTraCay/Đen Đào.jpg" alt="Đen Đào" class="img-thumbnail my-1" />
-                  <p class="h5">Đen Đào</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-product3">
-          <div class="cate-list mb-3">
-            <div class="row"></div>
-          </div>
-          <div class="product-list mb-3">
-            <div class="product-title">
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="bg-success p-2 text-white bg-opacity-75 h1">Đá xay</p>
-                </div>
-              </div>
-            </div>
-            <div class="product-list-s py-3">
-              <div class="row">
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/DaXay/Khoai Môn Đá Xay.jpg" alt="Khoai Môn Đá Xay" class="img-thumbnail my-1" />
-                  <p class="h5">Khoai Môn Đá Xay</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img src="./img/Menu/DaXay/Matcha Đá Xay.jpg" alt="Matcha Đá Xay" class="img-thumbnail my-1" />
-                  <p class="h5">Matcha Đá Xay</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/DaXay/Mint Choco Smoothie.jpg"
-                    alt="Mint Choco Smoothie"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Mint Choco Smoothie</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/DaXay/Đào Hồng Đá Tuyết.jpg"
-                    alt="Đào Hồng Đá Tuyết"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Đào Hồng Đá Tuyết</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/DaXay/Yakult Đào Đá Xay.jpg"
-                    alt="Yakult Đào Đá Xay"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Yakult Đào Đá Xay</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/DaXay/Strawberry Oreo Smoothie.jpg"
-                    alt="Strawberry Oreo Smoothie"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Strawberry Oreo Smoothie</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-product4">
-          <div class="cate-list mb-3">
-            <div class="row"></div>
-          </div>
-          <div class="product-list mb-3">
-            <div class="product-title">
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="bg-success p-2 text-white bg-opacity-75 h1">Thức uống theo mùa</p>
-                </div>
-              </div>
-            </div>
-            <div class="product-list-s py-3">
-              <div class="row">
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Cotton Candy Milk Tea.jpg"
-                    alt="Cotton Candy Milk Tea"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Cotton Candy Milk Tea</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Milo Kem Chanh.jpg"
-                    alt="Milo Kem Chanh"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Milo Kem Chanh</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Rainbow Crush.jpg"
-                    alt="Rainbow Crush"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Rainbow Crush</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Sunrise Milk Tea.jpg"
-                    alt="Sunrise Milk Tea"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Sunrise Milk Tea</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Trà Xanh Kem Sữa Milo.jpg"
-                    alt="Trà Xanh Kem Sữa Milo"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Trà Xanh Kem Sữa Milo</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
-                </div>
-                <div class="col-md-4 col-6 mb-3 card">
-                  <img
-                    src="./img/Menu/ThucUongTheoMua/Trà Alisan Nhãn Sen.jpg"
-                    alt="Trà Alisan Nhãn Sen"
-                    class="img-thumbnail my-1"
-                  />
-                  <p class="h5">Trà Alisan Nhãn Sen</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h5">Trà Dưa Lưới Hoàng Kim</p>
+                  <p class="h4">35.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
               </div>
             </div>
@@ -453,61 +235,69 @@
             </div>
             <div class="product-list-s py-3">
               <div class="row">
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="7">
                   <img src="./img/Menu/Banh/BanhMi.png" alt="Bánh mì" class="img-thumbnail my-1" />
-                  <p class="h5">Bánh mì TeaMilk</p>
+                  <p class="h5">Bánh mì Pig Tea</p>
                   <p class="h4">30.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="8">
                   <img
                     src="./img/Menu/Banh/ButterChocolateCroissant.jpg"
                     alt="Butter Chocolate Croissant"
                     class="img-thumbnail my-1"
                   />
                   <p class="h5">Butter Chocolate Croissant</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="9">
                   <img
                     src="./img/Menu/Banh/GreenTeaChocoCake.png"
                     alt="Green Tea Choco Cake"
                     class="img-thumbnail my-1"
                   />
                   <p class="h5">GreenTea Choco Cake</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">30.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="10">
                   <img
                     src="./img/Menu/Banh/PassionPannaCotta.png"
                     alt="Passion Panna Cotta"
                     class="img-thumbnail my-1"
                   />
                   <p class="h5">Passion Panna Cotta</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="11">
                   <img
                     src="./img/Menu/Banh/PureButterCroissant.jpg"
                     alt="Pure Butter Croissant"
                     class="img-thumbnail my-1"
                   />
                   <p class="h5">Pure Butter Croissant</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">25.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
-                <div class="col-md-4 col-6 mb-3 card">
+                <div class="col-md-4 col-6 mb-3 card" data-id="12">
                   <img src="./img/Menu/Banh/TiramisuMini.png" alt="Tiramisu Mini" class="img-thumbnail my-1" />
                   <p class="h5">Tiramisu Mini</p>
-                  <p class="h4">50.000 (VNĐ)</p>
-                  <a href="#" class="btn btn-outline-success my-2">Thêm vào giỏ hàng</a>
+                  <p class="h4">45.000 (VNĐ)</p>
+                  <button class="btn btn-outline-success my-2">Thêm vào giỏ hàng</button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-12 p-2">
+          <p class="h2">Pig Tea - Pick Me</p>
+          <p></p>
         </div>
       </div>
     </div>
@@ -525,52 +315,13 @@
                 <th>Đơn giá</th>
                 <th>Số lượng</th>
                 <th>Thành tiền</th>
+                <th>Xóa</th>
               </tr>
-              <tr>
-                <td>
-                  <p class="fs-5 my-3">Trà sữa hoàng kim</p>
-                </td>
-                <td>
-                  <p class="my-3 gia">50.000 VNĐ</p>
-                </td>
-                <td>
-                  <input type="number" name="" class="my-3 soluong" value="1" onblur="calculateTotal(this)" />
-                </td>
-                <td>
-                  <p class="my-3 thanhtien"></p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p class="fs-5 my-3">Trà sữa sương sáo</p>
-                </td>
-                <td>
-                  <p class="my-3 gia">45.000 VNĐ</p>
-                </td>
-                <td>
-                  <input type="number" name="" class="my-3 soluong" value="1" onblur="calculateTotal(this)" />
-                </td>
-                <td>
-                  <p class="my-3 thanhtien"></p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p class="fs-5 my-3">Tiramisu</p>
-                </td>
-                <td>
-                  <p class="my-3 gia">30.000 VNĐ</p>
-                </td>
-                <td>
-                  <input type="number" name="" class="my-3 soluong" value="1" onblur="calculateTotal(this)" />
-                </td>
-                <td>
-                  <p class="my-3 thanhtien"></p>
-                </td>
-              </tr>
+              <tbody class="cart-items"></tbody>
+
               <tr>
                 <td colspan="3" class="h5">Tổng thanh toán</td>
-                <td id="totalAmount"></td>
+                <td id="totalAmount" colspan="2"></td>
               </tr>
             </table>
           </div>
@@ -582,6 +333,115 @@
     </div>
 
     <script>
+      class CartItem {
+        constructor(name, price, totalPrice) {
+          this.name = name
+          this.price = price
+          this.quantity = 1
+          this.totalPrice = totalPrice
+        }
+      }
+      class LocalCart {
+        static key = 'cartItems'
+        static getLocalCartItems() {
+          let cartMap = new Map()
+          const cart = localStorage.getItem(LocalCart.key)
+          if (cart === null || cart.length === 0) return cartMap
+          return new Map(Object.entries(JSON.parse(cart)))
+        }
+
+        static addItemToLocalCart(id, item) {
+          let cart = LocalCart.getLocalCartItems()
+          if (cart.has(id)) {
+            let mapItem = cart.get(id)
+            mapItem.quantity += 1
+            cart.set(id, mapItem)
+          } else cart.set(id, item)
+          localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(cart)))
+          updateCartUI()
+        }
+
+        static removeItemFromCart(id) {
+          let cart = LocalCart.getLocalCartItems()
+          if (cart.has(id)) {
+            let mapItem = cart.get(id)
+            if (mapItem.quantity > 1) {
+              mapItem.quantity -= 1
+              cart.set(id, mapItem)
+            } else cart.delete(id)
+          }
+          if (cart.length === 0) localStorage.removeItem('cartItems')
+          else localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(cart)))
+          updateCartUI()
+        }
+      }
+      const wholeCartWindow = document.querySelector('#cartModal')
+      wholeCartWindow.inWindow = 0
+      const addToCartBtns = document.querySelectorAll('button.btn.btn-outline-success.my-2')
+      addToCartBtns.forEach((btn) => {
+        btn.addEventListener('click', addItemFunction)
+      })
+      function addItemFunction(e) {
+        const id = e.target.parentElement.getAttribute('data-id')
+        const name = e.target.parentElement.children[1].textContent
+        let price = e.target.parentElement.children[2].textContent
+        const item = new CartItem(name, price)
+        LocalCart.addItemToLocalCart(id, item)
+      }
+      function updateCartUI() {
+        const cartWrapper = document.querySelector('.cart-items')
+        cartWrapper.innerHTML = ''
+        const items = LocalCart.getLocalCartItems()
+        if (items === null) return
+        let count = 0
+        let total = 0
+        var sum = 0
+        for (const [key, value] of items.entries()) {
+          const cartItem = document.createElement('tr')
+          count += 1
+          const price = +value.price.split(' ')[0].replace('.', '')
+          total = price * +value.quantity
+          sum += total
+          total = Number(total).toLocaleString('vi-VN') + ' VNĐ'
+          cartItem.innerHTML = `
+                  <td>
+                    <p class="fs-5 my-3">${value.name}</p>
+                  </td>
+                  <td>
+                    <p class="my-3 gia">${value.price}</p>
+                  </td>
+                  <td class="py-4" style="display: flex; align-items: center; ">
+                      <div name="" class="soluong px-4" onblur="calculateTotal(this)" >${value.quantity}</div>
+                  </td>
+                  <td>
+                    <p class="my-3 thanhtien">${total}</p>
+                  </td>
+                  <td>
+                    <i class="fas fa-window-close cancel fs-3" style="color: #FF0000"></i>
+                  </td>
+
+        `
+          cartItem.querySelector('.cancel').addEventListener('click', () => {
+            LocalCart.removeItemFromCart(key)
+          })
+          document.querySelector('#totalAmount').textContent = Number(sum).toLocaleString('vi-VN') + ' VNĐ'
+          cartWrapper.append(cartItem)
+        }
+        const cartIcon = document.querySelector('.fa-solid.fa-bag-shopping')
+
+        if (count > 0) {
+          cartIcon.classList.add('non-empty')
+          let root = document.querySelector(':root')
+          root.style.setProperty('--after-content', `"${count}"`)
+        } else {
+          cartIcon.classList.remove('non-empty')
+          document.querySelector('#totalAmount').textContent = Number(sum).toLocaleString('vi-VN') + ' VNĐ'
+        }
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        updateCartUI()
+      })
+
       const name = localStorage.getItem('NameTT')
 
       var nameArray = name.split(' ')
@@ -590,47 +450,50 @@
       const TTDN = localStorage.getItem('trangthaiDN')
       if (TTDN == 'True') {
         document.getElementById('Dangnhap').textContent = firstName
-        const taikhoan = document.querySelector('#taikhoan')
-        taikhoan.href = 'thongtin.html'
+        const taikhoan = document.querySelectorAll('#taikhoan')
+        taikhoan.forEach((element) => {
+          element.href = 'thongtin.html'
+        })
         var cart = document.querySelector('#giohang')
         cart.setAttribute('data-bs-target', '#cartModal')
       }
 
-      function calculateTotal(input) {
-        var giaElement = input.parentElement.previousElementSibling.querySelector('.gia')
-        var thanhtienElement = input.parentElement.nextElementSibling.querySelector('.thanhtien')
-        var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''))
-        var soluong = input.value
-        var thanhtienValue = gia * soluong
-        var thanhtienFormatted = thanhtienValue.toLocaleString()
-        thanhtienElement.textContent = thanhtienFormatted + ' VNĐ'
-        var totalAmount = calculateTotalAmount()
-        document.getElementById('totalAmount').textContent = totalAmount.toLocaleString() + ' VNĐ'
-      }
+      // function calculateTotal(input) {
+      //   var giaElement = input.parentElement.previousElementSibling.querySelector('.gia')
+      //   var thanhtienElement = input.parentElement.nextElementSibling.querySelector('.thanhtien')
 
-      function calculateTotalAmount() {
-        var totalAmount = 0
+      //   var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''))
+      //   var soluong = input.value
+      //   if (isNaN(soluong) || soluong <= 0) {
+      //     removeCartItem()
+      //   }
+      //   var thanhtienValue = gia * soluong
+      //   var thanhtienFormatted = thanhtienValue.toLocaleString()
+      //   thanhtienElement.textContent = thanhtienFormatted + ' VNĐ'
+      //   var totalAmount = calculateTotalAmount()
+      //   document.getElementById('totalAmount').textContent = totalAmount.toLocaleString() + ' VNĐ'
+      // }
 
-        document.querySelectorAll('.soluong').forEach(function (input) {
-          var giaElement = input.parentElement.previousElementSibling.querySelector('.gia')
-          var soluong = input.value
-          var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''))
-          var subtotal = gia * soluong
-          totalAmount += subtotal
-        })
+      // function calculateTotalAmount() {
+      //   var totalAmount = 0
+      //   document.querySelectorAll('.soluong').forEach(function (input) {
+      //     var giaElement = input.parentElement.previousElementSibling.querySelector('.gia')
+      //     var soluong = input.value
+      //     var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''))
+      //     var subtotal = gia * soluong
+      //     totalAmount += subtotal
+      //   })
+      //   return totalAmount
+      // }
 
-        return totalAmount
-      }
-
-      document.querySelectorAll('.soluong').forEach(function (input) {
-        calculateTotal(input)
-      })
-
-      document.querySelectorAll('.soluong').forEach(function (input) {
-        input.addEventListener('input', function () {
-          calculateTotal(input)
-        })
-      })
+      // document.querySelectorAll('.soluong').forEach(function (input) {
+      //   calculateTotal(input)
+      // })
+      // document.querySelectorAll('.soluong').forEach(function (input) {
+      //   input.addEventListener('input', function () {
+      //     calculateTotal(input)
+      //   })
+      // })
 
       function dathang() {
         window.location.href = 'thanhtoan.html'
@@ -641,19 +504,6 @@
         ttgh = cart.getAttribute('data-bs-target')
         if (ttgh == '#') {
           alert('Vui lòng đăng nhập để sử dụng tính năng!!!')
-        }
-      }
-
-      function timkiemts() {
-        var tukhoa = document.getElementById('timkiem')
-        var searchTerm = tukhoa.value.trim().toLowerCase()
-        var h5Elements = document.getElementsByClassName('h5')
-        for (var i = 0; i < h5Elements.length; i++) {
-          var h5Content = h5Elements[i].textContent.trim().toLowerCase()
-          if (h5Content.includes(searchTerm)) {
-            h5Elements[i].scrollIntoView({ behavior: 'smooth', block: 'start' })
-            break
-          }
         }
       }
     </script>

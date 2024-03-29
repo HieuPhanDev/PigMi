@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanh Toán</title>
     <link rel="shortcut icon" type="image/png" href="./img/Logo/Logo1.png" />
-    <meta name="description" content="Giới thiệu TeaMilk" />
-    <meta name="keywords" content="TeaMilk, trà sữa, giới thiệu" />
+    <meta name="description" content="Giới thiệu Pig Tea - Pick Me" />
+    <meta name="keywords" content="Pig Tea - Pick Me, trà sữa, giới thiệu" />
     <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css" />
@@ -71,32 +71,33 @@
         $('#txtDiaChi').blur(function (e) {
           ktDiaChi()
         })
-        function kiemtraemail() {
-          let email = $('#txtEmail').val().trim()
-          let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-          if (email.length === 0) {
-            $('#errEmail').html('Email không được để trống')
-            $('#txtEmail').focus()
-            return false
-          } else if (!regex.test(email)) {
-            $('#errEmail').html('Email không hợp lệ')
-            $('#txtEmail').focus()
-            return false
-          } else {
-            $('#errEmail').html('')
-            return true
-          }
-        }
+        // function kiemtraemail() {
+        //   let email = $('#txtEmail').val().trim()
+        //   let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        //   if (email.length === 0) {
+        //     $('#errEmail').html('Email không được để trống')
+        //     $('#txtEmail').focus()
+        //     return false
+        //   } else if (!regex.test(email)) {
+        //     $('#errEmail').html('Email không hợp lệ')
+        //     $('#txtEmail').focus()
+        //     return false
+        //   } else {
+        //     $('#errEmail').html('')
+        //     return true
+        //   }
+        // }
 
-        $('#txtEmail').blur(function () {
-          kiemtraemail()
-        })
+        // $('#txtEmail').blur(function () {
+        //   kiemtraemail()
+        // })
 
         $('#txtThanhToan').click(function (e) {
-          if (!(kiemtrahoten() && kiemtraemail() && ktSDT() && ktDiaChi())) {
+          if (!(kiemtrahoten() && ktSDT() && ktDiaChi())) {
             alert('Vui lòng kiểm tra lại thông tin nhập')
           } else {
             $('#modalID').modal('show')
+            localStorage.removeItem('cartItems')
           }
         })
       })
@@ -107,7 +108,7 @@
     <div class="row">
       <div class="col-5"></div>
       <div class="col-2">
-        <img src="./img/Logo/Logo1.png" alt="" width="100%" />
+        <img src="./img/Logo/logo2.png" alt="" width="100%" />
       </div>
       <div class="col-6"></div>
     </div>
@@ -123,24 +124,18 @@
               <th>Số lượng</th>
               <th>Tổng tiền</th>
             </tr>
-
-            <tr>
-              <td>1</td>
-              <td>Yakult Đào Đá Xay</td>
-              <td>50.000 VNĐ</td>
-              <td>1</td>
-              <td>50.000 VNĐ</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Trà Sữa Hoàng Kim</td>
-              <td>50.000 VNĐ</td>
-              <td>1</td>
-              <td>50.000 VNĐ</td>
-            </tr>
+            <tbody class="cart-items">
+              <!-- <tr>
+                <td>1</td>
+                <td>Yakult Đào Đá Xay</td>
+                <td>50.000 VNĐ</td>
+                <td>1</td>
+                <td>50.000 VNĐ</td>
+              </tr> -->
+            </tbody>
             <tr>
               <th colspan="4">Tổng cộng:</th>
-              <td>100.000 VNĐ</td>
+              <td class="sum"></td>
             </tr>
           </table>
         </div>
@@ -154,16 +149,16 @@
         <div class="col-8">
           <form action="" class="form">
             <div class="row form-group">
-              <div class="col-6">
+              <div class="col-12">
                 <label for="">Họ tên:</label>
                 <input type="text" id="txtHoTen" class="form-control" />
                 <span id="errHoTen" class="err">(*)</span>
               </div>
-              <div class="col-6">
+              <!-- <div class="col-6">
                 <label for="">Email:</label>
                 <input type="email" name="" id="txtEmail" class="form-control" />
                 <span class="err" id="errEmail">(*)</span>
-              </div>
+              </div> -->
             </div>
 
             <div class="row form-group">
@@ -183,7 +178,7 @@
           </form>
         </div>
         <div class="col-4 -thanhtoan">
-          <p>Tổng tiền: <b>100.000 VNĐ</b></p>
+          <p>Tổng tiền: <b class="sum"></b></p>
           <h5>PHƯƠNG THỨC THANH TOÁN</h5>
           <input type="radio" name="thanhtoan" id="" checked />
           <i class="fa-solid fa-hand-holding-dollar"></i> &nbsp;Thanh toán khi nhận hàng <br />
@@ -214,9 +209,11 @@
               <p class="fa-solid"><i class="fa-solid fa-check-double fa-2xl"></i></p>
               <div class="col-2"></div>
               <div class="col-8-contain">
-                <h2>Thanh toán thành công !</h2>
+                <h2>Thanh toán thành công</h2>
+                <p>Vui lòng để ý số điện thoại để nhận hàng</p>
+                <h2>Cảm ơn bạn đã ủng hộ PigMi</h2>
                 <div class="xacnhan">
-                  <a href="./html/index.html"><button class="btn btn-danger">Xác Nhận</button></a>
+                  <a href="./index.html"><button class="btn btn-danger">Xác Nhận</button></a>
                 </div>
               </div>
               <div class="col-2"></div>
@@ -226,6 +223,57 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      class CartItem {
+        constructor(name, price) {
+          this.name = name
+          this.price = price
+          this.quantity = 1
+        }
+      }
+      class LocalCart {
+        static key = 'cartItems'
+
+        static getLocalCartItems() {
+          let cartMap = new Map()
+          const cart = localStorage.getItem(LocalCart.key)
+          if (cart === null || cart.length === 0) return cartMap
+          return new Map(Object.entries(JSON.parse(cart)))
+        }
+      }
+      const wholeCartWindow = document.querySelector('.table')
+      wholeCartWindow.inWindow = 0
+      function updateCartUI() {
+        const cartWrapper = document.querySelector('.cart-items')
+        cartWrapper.innerHTML = ''
+        const items = LocalCart.getLocalCartItems()
+        if (items === null) return
+        let count = 0
+        let total = 0
+        var sum = 0
+        for (const [key, value] of items.entries()) {
+          const cartItem = document.createElement('tr')
+          count += 1
+          const price = +value.price.split(' ')[0].replace('.', '')
+          total = price * +value.quantity
+          sum += total
+          total = Number(total).toLocaleString('vi-VN') + ' VNĐ'
+          cartItem.innerHTML = `
+                <td>${count}</td>
+                <td>${value.name}</td>
+                <td>${value.price}</td>
+                <td>${value.quantity}</td>
+                <td>${total}</td>
+        `
+          cartWrapper.append(cartItem)
+        }
+        document.querySelectorAll('.sum').forEach((element) => {
+          element.innerText = Number(sum).toLocaleString('vi-VN') + ' VNĐ'
+        })
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        updateCartUI()
+      })
+    </script>
   </body>
 </html>
